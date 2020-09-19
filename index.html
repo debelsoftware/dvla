@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/master.css">
+    <title>DVLA Search</title>
+  </head>
+  <body>
+    <div id="searchContain">
+      <h1>Vehicle Registration Checker</h1>
+      <h3>Enter your registration below</h3>
+      <p id="errorMsg">Error: Vehicle Not found</p>
+      <input class="searchbar" type="text" name="vehicleReg" value="" placeholder="EG. HV09 VBB" id="regInput">
+      <button type="button" name="regSearch" id="searchButton">Search</button>
+    </div>
+    <div id="loading">
+      <img src="./img/loading.svg" alt="">
+      <h2>Checking registration...</h2>
+    </div>
+    <div id="searchResults">
+      <img id="vehicleImg" src="./img/loading.svg" alt="">
+      <div class="">
+        <h1 id="vehicleDetails">Car Make and model</h1>
+        <h3>Is this your car?</h3>
+        <div class="confirmCar">
+          <button type="button" id="isCar" name="button">Yes</button>
+          <button type="button" id="notCar" name="button">No</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/regcheck.js" charset="utf-8"></script>
+</html>

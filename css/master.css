@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  background-color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1,h2,h3,p{
+  font-family: 'Roboto', sans-serif;
+  color: #262626;
+}
+#searchContain{
+  width: 90%;
+}
+#searchContain h1,h2,h3{
+  margin: 10px;
+}
+#searchContain button{
+  cursor: pointer;
+  font-size: 25px;
+  padding: 15px;
+  vertical-align: middle;
+  background-color: white;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+}
+#loading{
+  display: none;
+  margin: auto;
+}
+#loading img{
+  width: 60px;
+}
+#errorMsg{
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: red;
+}
+#searchResults{
+  padding: 20px;
+  display: none;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+}
+#vehicleImg{
+  margin: 10px;
+  width: 90%;
+  max-width: 300px;
+}
+.confirmCar{
+  margin-bottom: 10px;
+}
+.confirmCar button{
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  background-color: #1fad47;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  color: white;
+}
+#notCar{
+  background-color: #e33f29;
+}
+.searchbar{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f2c329;
+  border: none;
+  border-left: 25px solid #1c9de8;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 28px;
+  width: 100%;
+  max-width: 250px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
