@@ -71,7 +71,7 @@ function showVehicle(vehicleData, licencePlate){
     document.getElementById('loading').style.display = "none"
     document.getElementById('searchResults').style.display = "inline-block"
   }
-  vehicleImg.src = `https://dvlasearch.appspot.com/VehicleImage?apikey=${apikey}&licencePlate=${licencePlate}`
+  vehicleImg.src = `https://dvlasearch.appspot.com/VehicleImage?apikey=${apikey}&licencePlate=${licencePlate.replace(/\s/g,'')}`
   document.getElementById('vehicleDetails').textContent = `${vehicleData.make} ${vehicleData.model}, ${vehicleData.colour}, ${vehicleData.yearOfManufacture}`
 }
 
